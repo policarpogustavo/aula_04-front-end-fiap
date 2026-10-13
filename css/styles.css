@@ -1,36 +1,24 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
     background-color: #F0F2F5;
+    font-family: Poppins;
     color: #333;
 }
 
 nav {
-    display: flex;   /*Deixar intems um do outro */
-    justify-content: space-between; /*Tag a tendo espaçamento da tal ul */
-    align-items: center;/*Centraliza items na vertical */
-    padding: 0px 8px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 8px;
+    display: flex; /*deixar itens um ao lado do outro*/
+    justify-content: space-between; /* tag a tendo espaçamento da tag ul */
+    align-items: center; /* centraliza itens da vertical */
+
+    padding: 0 80px;
+
+    background-color: #fff;
     height: 80px;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
 }
 
 #logo {
@@ -40,37 +28,37 @@ a {
     font-weight: 600;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     list-style: none;
     gap: 24px;
-
-    transition: 0.3s;
 }
-
 
 .nav-link {
     text-decoration: none;
     color: #2d3436;
     font-size: 16px;
-}
 
-.nav-link.active {
-    border-bottom: px solid #00b894;
-    color: #00b894;
+    transition: 0.2s;
 }
 
 .nav-link:hover {
-    color: #00b894;
+    color: #00b894
+}
+
+.nav-link.active {
+    border-bottom: 3px #00b894 solid;
+    color: #00b894
 }
 
 .header-container {
     text-align: center;
-    padding: 40px 0px;
+
+    padding: 40px 0;
 }
 
 .header-container h1 {
-    font-size: 41px;
+    font-size: 40px;
 }
 
 .header-container span {
@@ -78,28 +66,29 @@ a {
 }
 
 main {
-    width: 90%;
-    max-width: 1100px;
+    width: 800px;
     margin: 0 auto;
 }
 
 .cards-section {
     display: flex;
     gap: 24px;
-    Text-align: center;
+    text-align: center;
 }
 
 .card {
-    background-color: #FFFFFF;
+    background-color: #fff;
     color: #333;
     padding: 24px;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
     width: 100%;
-    transition: 0.3s;
 
-    box-shadow: 0 0 10px #00b894;
+    transition: 0.4s;
+
+    /* box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR; */
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
@@ -107,7 +96,7 @@ main {
     color: #00b894;
 }
 
-card i {
+.card i {
     font-size: 48px;
     color: #00b894;
     margin-bottom: 16px;
