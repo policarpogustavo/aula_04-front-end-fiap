@@ -1,7 +1,7 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -100,4 +100,169 @@ main {
     font-size: 48px;
     color: #00b894;
     margin-bottom: 16px;
+}
+
+/* ===== Páginas de ferramentas (IMC, TMB, Água) ===== */
+
+#logo i {
+    margin-right: 6px;
+}
+
+.form-container {
+    background-color: #fff;
+    width: 480px;
+    margin: 70px auto;
+    padding: 40px 72px;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.form-container h2 i {
+    margin-right: 6px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.form-group select {
+    height: 28px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #00b894;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    border-radius: 6px;
+
+    color: #fff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background-color: #64b899;
+    margin-top: 36px;
+}
+
+.btn-secondary {
+    background-color: #afafb0;
+    margin-top: 18px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Hidratação */
+.meta {
+    text-align: center;
+    color: #000;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.water-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.btn-water {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 14px;
+
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-water:hover {
+    opacity: 0.85;
+}
+
+.btn-add {
+    background-color: #508be4;
+}
+
+.btn-reset {
+    background-color: #c0443b;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 42px;
+    background-color: #e0e0e0;
+    border-radius: 21px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+    background-color: #64b899;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.total {
+    font-size: 10px;
+    color: #000;
+    margin-top: 14px;
+}
+
+.total + .btn-secondary {
+    margin-top: 10px;
 }
