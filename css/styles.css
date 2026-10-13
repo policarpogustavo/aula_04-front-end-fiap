@@ -44,6 +44,8 @@ a {
     display: flex;
     list-style: none;
     gap: 24px;
+
+    transition: 0.3s;
 }
 
 
@@ -56,4 +58,57 @@ a {
 .nav-link.active {
     border-bottom: px solid #00b894;
     color: #00b894;
+}
+
+.nav-link:hover {
+    color: #00b894;
+}
+
+.header-container {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.header-container h1 {
+    font-size: 41px;
+}
+
+.header-container span {
+    color: #00b894;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cards-section {
+    display: flex;
+    gap: 24px;
+    Text-align: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    color: #333;
+    padding: 24px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.3s;
+
+    box-shadow: 0 0 10px #00b894;
+}
+
+.card:hover {
+    border: 2px solid #00b894;
+    color: #00b894;
+}
+
+card i {
+    font-size: 48px;
+    color: #00b894;
+    margin-bottom: 16px;
 }
